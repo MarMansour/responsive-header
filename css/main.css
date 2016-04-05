@@ -46,7 +46,7 @@ nav li {
 
 nav a {
   display: block;
-  width: 320px;
+  margin: 0;
   padding: .5em .75em;
   color: #6c8fe0;
   text-decoration: none;
@@ -85,6 +85,8 @@ nav li:nth-child(4) {
     font-size: 110%;
     line-height: 1.4;
   }
+
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -93,6 +95,35 @@ nav li:nth-child(4) {
     font-size: 120%;
     line-height: 1.5;
   }
+
+  header {
+    display: block;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+  }
+
+  nav li {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  nav li:first-child,
+  nav li:nth-child(3) {
+    display: inline-block;
+    float: left;
+    width: 25%;
+  }
+
+  nav li:nth-child(2),
+  nav li:nth-child(4) {
+    display: inline-block;
+    float: right;
+    width: 25%;
+  }
+
 
 }
 
@@ -103,4 +134,7 @@ nav li:nth-child(4) {
     line-height: 1.5;
   }
 
+  nav a {
+    padding: .5em 0;
+  }
 }

@@ -5,7 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -15,5 +15,92 @@ html {
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  padding: .5rem 0;
+  background-color: #18294f;
+  text-align: center;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0 0 .5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  text-align: left;
+}
+
+nav a {
+  display: block;
+  width: 320px;
+  padding: .5em .75em;
+  color: #6c8fe0;
+  text-decoration: none;
+  font-size: 1.125rem;
+}
+
+nav a:hover {
+  background-color: #6c8fe0;
+  color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+nav li {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+nav li:first-child,
+nav li:nth-child(3) {
+  float: left;
+  width: 50%;
+}
+
+nav li:nth-child(2),
+nav li:nth-child(4) {
+  float: right;
+  width: 50%;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+    line-height: 1.5;
+  }
+
 }
